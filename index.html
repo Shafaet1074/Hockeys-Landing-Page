@@ -4,32 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hockeys-Landing-Page</title>
+
+  <!-- tailwind and Daisy UI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    .font-manrope{
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+
 </head>
 <body>
   <header>
    <!-- Navbar -->
   </header>
-  <main class="container mx-auto">
+  <main class="container mx-auto font-manrope">
 
-    <div class="carousel mx-auto  lg:p-28">
-      <div id="slide1" class="carousel-item relative w-full lg:p-28  ">
-        <div class="lg:flex lg:p-20">
-        <img src="Images/1.png" class="w-full  " />
+    <div class="carousel mx-auto lg:p-20">
+      <div id="slide1" class="carousel-item relative w-full lg:p-24 p-6">
+        
+        <img src="Images/1.png" class="w-full " />
 
-        <!-- card -->
-        <div class="mt-16">
-          <div class="card   lg:w-2/5 bg-black shadow-xl lg:absolute lg:right-56 lg:bottom-56  ">
-            <div class="card-body">
-              <h2 class="card-title font-bold-semi text-white">Meet all the heroes from the field</h2>
-              <p class="text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-        <div class="absolute flex  lg:justify-between transform -translate-y-1/2  left-36 right-36  top-36 lg:left-5  lg:right-5  lg:top-1/2  gap-4">
+        
+     
+        <div class="absolute flex  justify-around  transform -translate-y-1/2  left-36 right-36  top-36 lg:left-15  lg:right-15  lg:top-1/2  gap-4">
           <a  href="#slide1" class="btn btn-circle bg-black text-white text-center">❮</a> 
           <a href="#slide2" class="btn btn-circle bg-black text-white text-center">❯</a>
         </div>
@@ -42,22 +47,14 @@
           
 
       <!-- Slide 2 -->
-      <div id="slide2" class="carousel-item relative w-full lg:p-28">
-        <div class="lg:flex lg:p-20">
+      <div id="slide2" class="carousel-item relative w-full lg:p-24 p-6">
+        
           <img src="Images/1.png" class="w-full  " />
   
           <!-- card -->
-          <div class="mt-16">
-            <div class="card   lg:w-2/5 bg-black shadow-xl lg:absolute lg:right-56 lg:bottom-56  ">
-              <div class="card-body">
-                <h2 class="card-title font-bold-semi text-white">Meet all the heroes from the field</h2>
-                <p class="text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-          <div class="absolute flex  lg:justify-between  transform -translate-y-1/2  left-36 right-36  top-36  lg:left-5 lg:right-5  lg:top-1/2  gap-4">
+         
+        
+          <div class="absolute flex  justify-around  transform -translate-y-1/2  left-36 right-36  top-36 lg:left-15  lg:right-15  lg:top-1/2  gap-4">
             <a  href="#slide1" class="btn btn-circle bg-black text-white text-center">❮</a> 
             <a href="#slide2" class="btn btn-circle bg-black text-white text-center">❯</a>
           </div>
@@ -65,6 +62,85 @@
       
       
     </div>
+
+    <!-- card -->
+    <div class="p-6">
+      <div class="card   lg:w-1/3 bg-black shadow-xl lg:absolute lg:right-56 lg:-bottom-36  ">
+        <div class="card-body ">
+          <h2 class="card-title font-bold-semi text-white">Meet all the heroes from the field</h2>
+          <p class="text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          
+        </div>
+      </div>
+    </div>
+    <!-- club description -->
+    <section>
+        <h1 class="font-extrabold text-center text-3xl lg:text-7xl mb-8">
+          Professional Hockeys Club
+        </h1>
+        <p class="text-center text-2xl lg:text-4xl">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      
+    </section>
+
+    <!-- percentage of performance -->
+    <section class="pt-10 lg:flex">
+      <!-- Cardsss 1 -->
+      <div class="card ">
+        <figure class="px-10 pt-10">
+          <div class="radial-progress bg-white text-red-600 border-red-500" style="--value:87;" role="progressbar">87%</div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-3xl">Prayer Facility</h2>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <div class="card-actions">
+            
+          </div>
+        </div>
+      </div>
+
+       <!-- Cardsss 2 -->
+       <div class="card ">
+        <figure class="px-10 pt-10">
+          <div class="radial-progress bg-white text-green-600 border-lime-500" style="--value:95;" role="progressbar">95%</div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-3xl">Experienced Coach</h2>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <div class="card-actions">
+            
+          </div>
+        </div>
+      </div>
+
+       <!-- Cardsss 3 -->
+       <div class="card ">
+        <figure class="px-10 pt-10">
+          <div class="radial-progress bg-white text-yellow-500 border-yellow-500" style="--value:95;" role="progressbar">95%</div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-3xl">Senior Player</h2>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <div class="card-actions">
+            
+          </div>
+        </div>
+      </div>
+
+       <!-- Cardsss 4 -->
+       <div class="card ">
+        <figure class="px-10 pt-10">
+          <div class="radial-progress bg-white text-blue-600 border-blue-500" style="--value:80;" role="progressbar">80%</div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-3xl">Training Ground</h2>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <div class="card-actions">
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
   </main>
   <footer>
 
